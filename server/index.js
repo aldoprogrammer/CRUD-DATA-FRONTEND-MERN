@@ -7,7 +7,7 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
-// mongoose.connect("mongodb+srv://aldobesma:VqwrJShxW0Fav4gk@cluster0.qiousfu.mongodb.net/crud");
+// mongoose.connect(YourMongoDBHere);
 
 app.get("/", (req, res) => {
     UserModel.find({})
